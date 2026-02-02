@@ -110,7 +110,7 @@ p, li {
 
 .portfolio img {
     /* UBAH: Ukuran foto sertifikat dibuat mungil (120px) */
-    width: 120px; 
+    width: 10px; 
     height: 85px;
     object-fit: cover; 
     border-radius: 8px;
@@ -122,3 +122,4 @@ p, li {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(190, 24, 93, 0.1);
 }
+
