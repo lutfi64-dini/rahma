@@ -3,154 +3,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #e93c9b, #fff3f7);
-    color: #77073f;
+    background-color: #fff5f7; /* Pink sangat muda */
+    color: #5d1a3a;
 }
 
 /* CONTAINER */
 .container {
-    max-width: 1020px;
-    margin: 80px auto;
-    background: #f19898;
+    max-width: 850px;
+    margin: 40px auto;
+    background: #ffffff; 
     display: flex;
-    border-radius: 26px;
-    box-shadow: 0 18px 45px rgba(241, 50, 146, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     overflow: hidden;
 }
 
 /* SIDEBAR */
 .sidebar {
-    width: 33%;
-    background: linear-gradient(180deg, #fde2e4, #e0e7ff);
-    color: #77073f;
-    padding: 50px 40px;
+    width: 30%;
+    background: #fdf2f4;
+    padding: 30px;
+    text-align: center; /* Foto profil jadi di tengah */
 }
 
+/* FOTO PROFIL KECIL */
 .profile {
-    width: 135px;
-    height: 135px;
+    width: 80px; /* Diperkecil dari 135px ke 80px */
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 24px;
-    border: 4px solid #ad2121;
-}
-
-.sidebar h2 {
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 6px;
-    color: #77073f;
-}
-
-.job {
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #77073f;
-    margin-bottom: 34px;
-}
-
-/* INFO */
-.info {
-    list-style: none;
-    font-size: 14px;
-}
-
-.info li {
-    margin-bottom: 16px;
-    opacity: 0.85;
+    margin-bottom: 15px;
+    border: 3px solid #ffffff;
 }
 
 /* CONTENT */
 .content {
-    width: 67%;
-    padding: 55px;
+    width: 70%;
+    padding: 40px;
 }
 
-section {
-    margin-bottom: 48px;
-}
-
-h3 {
-    font-size: 14px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #77073f;
-    margin-bottom: 18px;
-    position: relative;
-}
-
-h3::after {
-    content: "";
-    width: 42px;
-    height: 2px;
-    background: linear-gradient(90deg, #b61470, transparent);
-    display: block;
-    margin-top: 10px;
-}
-
-p {
-    font-size: 15px;
-    line-height: 1.85;
-    color: #77073f;
-}
-
-/* SKILLS */
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-}
-
-.skills span {
-    font-size: 13px;
-    padding: 9px 22px;
-    border-radius: 999px;
-    background: #fdf4ff;
-    color: #7c3aed;
-    font-weight: 500;
-    border: 1px solid #e9d5ff;
-}
-
-/* PORTFOLIO */
+/* PORTOFOLIO / SERTIFIKAT KECIL */
 .portfolio {
     display: flex;
+    gap: 10px;
     flex-wrap: wrap;
-    gap: 15px; /* Jarak antar foto diperkecil sedikit */
-    margin-top: 15px;
 }
 
 .portfolio img {
-    /* UBAH DI SINI: ganti width dari calc(50%) menjadi ukuran pixel yang kecil */
-    width: 50px; 
-    height: auto; 
-    
-    /* Hapus min-width agar tidak dipaksa melebar */
-    border-radius: 8px; /* Border radius diperkecil agar pas dengan ukuran kecil */
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-    
-    /* Tambahkan ini agar foto tidak gepeng */
-    object-fit: contain; 
+    width: 100px;  /* SANGAT KECIL: Ubah angka ini jika ingin lebih besar sedikit */
+    height: 70px;  /* Ukuran seragam */
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    transition: 0.3s;
 }
 
 .portfolio img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.15);
+    transform: scale(1.2); /* Membesar saat disentuh */
 }
 
-/* Hapus atau komentari bagian ini agar foto kedua tidak berbeda sendiri ukurannya */
-/* .portfolio img:nth-child(2) {
-    aspect-ratio: auto; 
-} 
-*/
-}
-
-
-
+/* Warna Teks agar kelihatan */
+h2, h3 { color: #831843; }
+p, li { color: #4b5563; font-size: 14px; line-height: 1.6; }
