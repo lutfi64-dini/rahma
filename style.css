@@ -126,7 +126,7 @@ p {
 
 .portfolio img {
     width: calc(50% - 10px);
-    min-width: 250px;
+    min-width: 10px;
     height: auto;
     border-radius: 12px;
     border: 1px solid #e2e8f0;
@@ -145,3 +145,4 @@ p {
     aspect-ratio: 16/19;
     object-fit: cover;
 }
+
