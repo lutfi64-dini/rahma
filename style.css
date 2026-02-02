@@ -1,0 +1,147 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #e93c9b, #fff3f7);
+    color: #77073f;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1020px;
+    margin: 80px auto;
+    background: #f19898;
+    display: flex;
+    border-radius: 26px;
+    box-shadow: 0 18px 45px rgba(241, 50, 146, 0.12);
+    overflow: hidden;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 33%;
+    background: linear-gradient(180deg, #fde2e4, #e0e7ff);
+    color: #77073f;
+    padding: 50px 40px;
+}
+
+.profile {
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
+    border: 4px solid #ad2121;
+}
+
+.sidebar h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #77073f;
+}
+
+.job {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #77073f;
+    margin-bottom: 34px;
+}
+
+/* INFO */
+.info {
+    list-style: none;
+    font-size: 14px;
+}
+
+.info li {
+    margin-bottom: 16px;
+    opacity: 0.85;
+}
+
+/* CONTENT */
+.content {
+    width: 67%;
+    padding: 55px;
+}
+
+section {
+    margin-bottom: 48px;
+}
+
+h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #77073f;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+h3::after {
+    content: "";
+    width: 42px;
+    height: 2px;
+    background: linear-gradient(90deg, #b61470, transparent);
+    display: block;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: #77073f;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skills span {
+    font-size: 13px;
+    padding: 9px 22px;
+    border-radius: 999px;
+    background: #fdf4ff;
+    color: #7c3aed;
+    font-weight: 500;
+    border: 1px solid #e9d5ff;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.portfolio img {
+    width: calc(50% - 10px);
+    min-width: 250px;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+    border-color: #c4b5fd;
+}
+
+.portfolio img:nth-child(2) {
+    aspect-ratio: 16/19;
+    object-fit: cover;
+}

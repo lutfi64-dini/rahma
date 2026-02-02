@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<?php
+$nama = "Lutfiyah Rahmadini";
+$profesi = "Siswa SMK ";
+$email = "lutfiyahrahmadini56@gmail.com";
+$telepon = "087824761592";
+$alamat = "Bekasi, Indonesia";
+?>
+ 
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume | <?= $nama ?></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <img src="diriquu.jpeg" class="profile">
+        <h2><?= $nama ?></h2>
+        <p class="job"><?= $profesi ?></p>
+
+        <ul class="info">
+            <li>📍 <?= $alamat ?></li>
+            <li>📧 <?= $email ?></li>
+            <li>📞 <?= $telepon ?></li>
+        </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+
+        <section>
+            <h3>Tentang saya</h3>
+            <p>
+                Saya adalah seorang siswa jurusan Teknik Komputer dan Jaringan (TKJ)
+                yang memiliki minat di bidang teknologi dan informasi, khususnya jaringan
+                komputer, saya terbiasa memahami dasar-dasar jaringan, saya mampu bekerja mandiri
+                maupun dalam tim.
+            </p>
+        </section>
+
+        <section> 
+            <h3>Skills</h3>
+            <div class="skills">
+                <span>HTML & CSS Dasar</span>
+                <span>Otomatisasi dan Tata kelola Perkantoran (OTKP)</span>
+                <span>Microsoft office</span>
+                <span>Crimping kabel LAN</span>
+                <span>Basic Drawing</span>
+                <span>Baking</span>
+                <span>DIY</span>
+            </div>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <ul>
+                <li>2014–2020 — SDN PADURENAN 2</li>
+                <li>2020–2023 — SMPN 10 KOTA BEKASI</li>
+                <li>2023–2026 — SMKN 2 KOTA BEKASI</li>
+            </ul>
+        </section> 
+ 
+        <section>
+            <h3>Pengalaman</h3>
+            <ul>
+                <li>Membuat website sederhana</li>
+                <li>Praktik dasar jaringan komputer</li>
+                <li>Kegiatan Estrakurikuler</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Portfolio</h3>
+            <div class="portfolio">
+                <img src="sertif huaweii.jpeg">
+                <img src="sertif pramuka.jpeg">
+            </div>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
