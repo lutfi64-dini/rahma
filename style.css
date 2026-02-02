@@ -126,7 +126,7 @@ p {
 
 .portfolio img {
     /* UBAH DI SINI: ganti width dari calc(50%) menjadi ukuran pixel yang kecil */
-    width: 120px; 
+    width: 50px; 
     height: auto; 
     
     /* Hapus min-width agar tidak dipaksa melebar */
@@ -151,5 +151,6 @@ p {
 } 
 */
 }
+
 
 
