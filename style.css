@@ -120,29 +120,36 @@ p {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px; /* Jarak antar foto diperkecil sedikit */
     margin-top: 15px;
 }
 
 .portfolio img {
-    width: calc(50% - 10px);
-    min-width: 100px;
-    height: auto;
-    border-radius: 12px;
+    /* UBAH DI SINI: ganti width dari calc(50%) menjadi ukuran pixel yang kecil */
+    width: 120px; 
+    height: auto; 
+    
+    /* Hapus min-width agar tidak dipaksa melebar */
+    border-radius: 8px; /* Border radius diperkecil agar pas dengan ukuran kecil */
     border: 1px solid #e2e8f0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
+    
+    /* Tambahkan ini agar foto tidak gepeng */
+    object-fit: contain; 
 }
 
 .portfolio img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
-    border-color: #c4b5fd;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.15);
 }
 
-.portfolio img:nth-child(2) {
-    aspect-ratio: 16/19;
-    object-fit: cover;
+/* Hapus atau komentari bagian ini agar foto kedua tidak berbeda sendiri ukurannya */
+/* .portfolio img:nth-child(2) {
+    aspect-ratio: auto; 
+} 
+*/
 }
+
 
